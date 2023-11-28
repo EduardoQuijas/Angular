@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HolaMundo": {
+    "LoginAuth": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hola-mundo",
+            "outputPath": "dist/login-auth",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,8 +25,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -63,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "HolaMundo:build:production"
+              "buildTarget": "LoginAuth:build:production"
             },
             "development": {
-              "buildTarget": "HolaMundo:build:development"
+              "buildTarget": "LoginAuth:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "HolaMundo:build"
+            "buildTarget": "LoginAuth:build"
           }
         },
         "test": {
@@ -99,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "d2b82b4a-d65b-415e-a752-d88319898ad1"
+    "analytics": "72860655-65be-4134-9b13-baa2b088c918"
   }
 }
